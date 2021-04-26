@@ -1,0 +1,64 @@
+baseURL = "https://bitdispenser.dev/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Bitdispenser"
+theme = "hermit"
+#enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+rssLimit = 15
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International 4.0 International License."
+enableEmoji = true
+relativeUrls = true
+
+[author]
+  name = "Davide Polonio"
+
+[params]
+  dateform        = "2 Jan 2006"
+  dateformShort   = "2 Jan"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04 -0700"
+  themeColor = "#494f5c"
+  homeSubtitle = "Yet another ordered dispenser of bits"
+  footerCopyright = ' &#183; <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
+  justifyContent = true
+  relatedPosts = true
+  code_copy_button = true
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:davide@poldebra.me"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/Polpetta"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/english"
+    title = "Bitdispenser"
+    homeSubtitle = "Yet another ordered dispenser of bits"
+    weight = 0
+    [[languages.en.menu.main]]
+        name = "Posts"
+        url = "posts/"
+        weight = 10
+    [[languages.en.menu.main]]
+        name = "About me"
+        url = "about-me"
+        weight = 20
+  [languages.it]
+    languageName = "Italiano"
+    contentDir = "content/italian"
+    title = "Bitdispenser"
+    homeSubtitle = "L'ennesimo distributore ordinato di bit"
+    weight = 10
+    [[languages.it.menu.main]]
+      name = "Articoli"
+      url = "articoli/"
+      weight = 10
+    [[languages.it.menu.main]]
+      name = "Riguardo l'Autore"
+      url = "riguardo-l-autore"
+      weight = 20
