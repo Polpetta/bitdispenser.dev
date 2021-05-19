@@ -4,7 +4,8 @@
     "description": "Personal Hugo website",
     "main": "none.js",
     "scripts": {
-        "lint": "markdownlint-cli2 content/"
+        "lint": "markdownlint-cli2 content/",
+	      "spellchecker": "bash tools/spellchecker.sh en"
     },
     "repository": {
         "type": "git",

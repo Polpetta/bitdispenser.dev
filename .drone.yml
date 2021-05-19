@@ -8,6 +8,10 @@ steps:
     commands:
       - npm install
       - npm run lint
+  - name: spellchecker checks
+    image: polpetta/spellchecker
+    commands:
+      - ./tools/spellchecker.sh en
   - name: hugo build
     image: klakegg/hugo:0.82.1-ext-alpine-ci
     commands:

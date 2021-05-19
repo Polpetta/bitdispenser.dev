@@ -56,12 +56,12 @@ his dispenser` caption=`Engineer class with a dispenser. Thanks to [Team
 Fortress wiki](https://wiki.teamfortress.com) for providing the image I
 shamelessly downloaded from them` >}}
 
-I hope Valve will not sue me for taking that assed as my website favicon. I
+I hope Valve will not sue me for taking that asset as my website favicon. I
 swear I will change it, a day. Pinky promise.
 
 ### Hosting
 
-The real problem of hosting a website nowday is not how to build it (as you can
+The real problem of hosting a website now day is not how to build it (as you can
 see) but _where_ you can host it. There are plenty of cloud provides: AWS,
 Google Cloud, DigitalOcean, Scaleway, etc... every day there is a new one
 popping up. They all offers the possibility to host your website pretty easily,
@@ -84,12 +84,12 @@ while trying to kill the boredom caused by COVID-19 lockdown, I discovered
 bothered too much to understand what was about. I though "well, it surely is
 some sort of filesystem". I was somewhat right, but not the way I thought.
 
-IPFS acts like a peer-to-peer network, where nodes hash the content
-they want to share to let other nodes grab it. You can grab this content using
-your local node or using one of the many available gateways. Nodes can "pin" a
-file too, in order to keep it locally and to serve it to other nodes. If a file
-gets pinned by different nodes and gains traction it basically becomes
-undeletable from the web.
+IPFS acts like a peer-to-peer network, where nodes hash the content they want to
+share to let other nodes grab it. You can grab this content using your local
+node or using one of the many available gateways. Nodes can "pin" a file too, in
+order to keep it locally and to serve it to other nodes. If a file gets pinned
+by different nodes and gains traction it basically can not be deleted from the
+web.
 
 #### Choosing the right tools
 
@@ -113,10 +113,10 @@ Finally, in order to achieve full automation with DNS updates, I would have
 needed to implement and use NameCheap APIs (currently it is the DNS provider I
 use for most of my websites). "What's the difficulty?" one would ask. [Here is
 the official documentation](https://www.namecheap.com/support/api/intro/), and
-even if the APIs look promising, while studing them my will to live decreased a
+even if the APIs look promising, while studying them my will to live decreased a
 little bit, and so I decided that if I wanted to get up and running with less
 maintenance as possible, with a good uptime while having the maximum
-automatization possible I needed to rely on a dedicated service. Luckily
+automation possible I needed to rely on a dedicated service. Luckily
 [fleek.co](https://fleek.co) was what I was searching for. They currently
 provide the possibility to buy a domain from their website, giving them all the
 hassle of updating the new website on IPFS, distributing it, refreshing a very
@@ -131,10 +131,10 @@ imagine, provides multiple benefits:
   to understand why the website does not load/the DNS is not properly updated
   
 The only downside to this approach is that Fleek provides limitations on how
-much data and bandwith you can host. At the time of writing, you can only host
-up to 3GB (enough for this website) and have a 50GB bandwith (that's ok for now)
-for the free version. [Upgrading you account](https://fleek.co/pricing/) to one
-of the available plans give you extra space and bandwith.
+much data and bandwidth you can host. At the time of writing, you can only host
+up to 3GB (enough for this website) and have a 50GB bandwidth (that is fine for
+now) for the free version. [Upgrading you account](https://fleek.co/pricing/) to
+one of the available plans give you extra space and bandwidth.
 
 ## Future improvements
 
