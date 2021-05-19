@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: build
+
+steps:
+  - name: lint checks
+    image: node:14.16-alpine
+    commands:
+      - npm install
+      - npm run lint
+  - name: hugo build
+    image: klakegg/hugo:0.82.1-ext-alpine-ci
+    commands:
+      - hugo

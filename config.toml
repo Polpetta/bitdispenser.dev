@@ -7,18 +7,21 @@ theme = "hermit"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 15
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International 4.0 International License."
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 enableEmoji = true
 relativeUrls = true
 
 [author]
   name = "Davide Polonio"
 
+[taxonomies]
+  tag = "tags"
+
 [params]
   dateform        = "2 Jan 2006"
   dateformShort   = "2 Jan"
   dateformNum     = "02-01-2006"
-  dateformNumTime = "02-01-2006 15:04 -0700"
+  dateformNumTime = "02-01-2006"
   themeColor = "#494f5c"
   homeSubtitle = "Yet another ordered dispenser of bits"
   footerCopyright = ' &#183; <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'

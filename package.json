@@ -1,0 +1,18 @@
+{
+    "name": "bitdispenser.dev",
+    "version": "0.0.1",
+    "description": "Personal Hugo website",
+    "main": "none.js",
+    "scripts": {
+        "lint": "markdownlint-cli2 content/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://git.poldebra.me/polpetta/bitdispenser.dev.git"
+    },
+    "author": "Polonio Davide <davide@poldebra.me>",
+    "license": "CC-BY-SA-4.0",
+    "devDependencies": {
+        "markdownlint-cli2": "0.0.10"
+    }
+}
