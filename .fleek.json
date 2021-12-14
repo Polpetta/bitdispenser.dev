@@ -1,0 +1,10 @@
+{
+    "build": {
+        "image": "polpetta/fleek:latest",
+        "command": "git lfs install && git lfs pull && yarn && hugo",
+        "publicDir": "public",
+        "environment": {
+            "HUGO_DISABLELANGUAGES": "it"
+        }
+    }
+}
