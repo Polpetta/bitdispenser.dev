@@ -7,7 +7,7 @@ tags:
 - rust
 - telegram
 - songlify
-date: 2022-01-02T15:32:00+02:00
+date: 2022-01-05T17:01:00+02:00
 ---
 
 Some time passed since the last article I wrote there. A lot of stuff happened
