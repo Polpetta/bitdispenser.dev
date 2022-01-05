@@ -19,21 +19,22 @@ start a series about it, maybe.
 
 ## Telegram bots
 
-Telegram bots are not something new to me and nowdays are pretty much easy to
+Telegram bots are not something new to me and nowadays are pretty much easy to
 make, so I consider them like a gym where to try out new technologies and
 experiment with stuff. I wrote plentiful of them, some of those are open source
-like for example https://github.com/Augugrumi/TorreArchimedeBot (which is now
-broken 😭) that was useful when going to University, because it scraped the
-university free room web page and from there it was able to tell you which rooms
-where without any lessons and for how much time, allowing you to easily find a
-place where to study with your mates (yep, we didn't like library too much).
+like for example <https://github.com/Augugrumi/TorreArchimedeBot> (which is
+currently broken 😭) that was useful when going to University, because it
+scraped the university free room web page and from there it was able to tell you
+which rooms where without any lessons and for how much time, allowing you to
+easily find a place where to study with your mates (yep, we didn't like library
+too much).
 
 {{< figure src="/content/songlify/telegramscreen.png" alt=`A screenshot of
 TorreArchimedeBot in action.` caption=`A screenshot of TorreArchimedeBot in
 action.` >}}
 
 Also another one bot worthy of mention is
-https://github.com/Polpetta/RedditToTelegram, that allowed our D&D group to
+<https://github.com/Polpetta/RedditToTelegram>, that allowed our D&D group to
 receive push notifications of our private Subreddit in our Telegram group.
 
 As you can see, all of these bots are quite simple, but they have the added
@@ -92,13 +93,13 @@ the time I started the project.
 So, after choosing what was going to use to build the bot, I needed a _reason_
 to build it.
 
-With my friends we usually share a lot of songs (via Spotify links), so I tought
-it was a good idea to build a bot around it. I integrated a Spotify API library
-in it and started hacking up a bot.
+With my friends we usually share a lot of songs (via Spotify links), so I
+thought it was a good idea to build a bot around it. I integrated a Spotify API
+library in it and started hacking up a bot.
 
-> ⚠ Note that at the time of writing I have just notice the library I use for
-> talking with Spotify, [aspotify](https://crates.io/crates/aspotify) has been
-> deprecated in favour of [rspotify](https://crates.io/crates/rspotify)
+> ⚠ Note that at the time of writing I have just noticed that the library I use
+> for speaking with Spotify, [aspotify](https://crates.io/crates/aspotify) has
+> been deprecated in favour of [rspotify](https://crates.io/crates/rspotify)
 
 The first bot version was something very simple, and it was a single-file
 program with nothing very fancy (I have written it in a night):
@@ -182,10 +183,11 @@ async fn main() {
 
 As you can see, basically every time a request arrived to the bot, login to
 Spotify was performed and track information and name retrieved from there. Of
-course this was only the beginning. Now the bot supports albums and playlists
-too, with the possibility to go through each song in the playlist and collect
-general information such as how many artists are in that playlist, how many
-songs and other little information like that. If you see the [bot
+course this was only the beginning (also you can "appreciate" the number of
+nested blocks there...). Now the bot supports albums and playlists too, with the
+possibility to go through each song in the playlist and collect general
+information such as how many artists are in that playlist, how many songs and
+other little information like that. If you see the [bot
 repository](https://git.poldebra.me/polpetta/Songlify) you can see now that
 Spotify functions live in a separate module.
 
@@ -201,7 +203,7 @@ dependencies inside the final image. I used the images distributed by the
 [Github repository](https://github.com/GoogleContainerTools/distroless)) in
 order to obtain the smallest possible image. The final result?
 
-```
+```txt
 λ ~/Desktop/git/songlify/ docker images
 REPOSITORY               TAG                    IMAGE ID       CREATED          SIZE
 test/test                latest                 8ac7a7018719   5 seconds ago    34MB
@@ -217,7 +219,7 @@ able to run, which by default weights 20MB. A plus of these images is that they
 do not run as root user and they do not have any shell of bash integrated,
 making a possible surface attack smaller (not that Docker is secure anyway...).
 I upload the images on Docker Hub, where you can find them here
-https://hub.docker.com/r/polpetta/songlify
+<https://hub.docker.com/r/polpetta/songlify>
 
 Finally, to run the bot I use a very simple docker-compose definition, that can
 be found in my [server-dotfiles
